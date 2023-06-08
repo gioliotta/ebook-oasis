@@ -6,10 +6,18 @@ const Header = styled.header`
   font-family: "Lora", sans-serif;
   background-color: #d5bdaf;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
   width: 100vw;
   height: 5rem;
+
+  @media (max-width: 540px) {
+    height: auto;
+    flex-direction: column;
+    row-gap: 2rem;
+    padding: 1rem 0;
+  }
 `;
 
 const Container = styled.div`
